@@ -1930,6 +1930,9 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
 /* harmony default export */ __webpack_exports__["default"] = ({});
 
 /***/ }),
@@ -2061,6 +2064,8 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
+//
+//
 //
 //
 //
@@ -37790,7 +37795,9 @@ var render = function() {
   return _c("div", { staticClass: "container-fluid" }, [
     _c("div", { staticClass: "row p-4" }, [
       _c("div", { staticClass: "col-lg-2" }, [
-        _c("div", { staticClass: "card bg-dark shadow" }, [
+        _c("div", { staticClass: "card bg-dark shadow position-fixed" }, [
+          _vm._m(0),
+          _vm._v(" "),
           _c(
             "div",
             { staticClass: "card-body" },
@@ -37831,7 +37838,16 @@ var render = function() {
     ])
   ])
 }
-var staticRenderFns = []
+var staticRenderFns = [
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "card-header" }, [
+      _c("h4", { staticClass: "text-white" }, [_vm._v("Menu")])
+    ])
+  }
+]
 render._withStripped = true
 
 
@@ -38082,11 +38098,10 @@ var render = function() {
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
   return _c("div", [
-    _c("h3", { staticClass: "text-left" }, [_vm._v("Data User")]),
-    _c("br"),
+    _vm._m(0),
     _vm._v(" "),
     _c("table", { staticClass: "table table-bordered" }, [
-      _vm._m(0),
+      _vm._m(1),
       _vm._v(" "),
       _c(
         "tbody",
@@ -38137,6 +38152,15 @@ var render = function() {
   ])
 }
 var staticRenderFns = [
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "card-header bg-dark" }, [
+      _c("h3", { staticClass: "text-left text-white" }, [_vm._v("Data User")]),
+      _c("br")
+    ])
+  },
   function() {
     var _vm = this
     var _h = _vm.$createElement

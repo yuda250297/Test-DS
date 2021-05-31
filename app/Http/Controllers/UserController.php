@@ -41,8 +41,8 @@ class UserController extends Controller
     public function edit($id)
     {
         // try {
-            $user = User::findOrFail($id);
-            return response()->json($user, 200);
+        $user = User::findOrFail($id);
+        return response()->json($user, 200);
     }
 
     /**
@@ -54,14 +54,12 @@ class UserController extends Controller
      */
     public function update(Request $request, $id)
     {
-        // try {
-            $user = User::findOrFail($id);
-            $user->update([
-                'name' => $request->name,
-                'email' => $request->email,
-                // 'password' => $request->password,
-            ]);
-            return response()->json('Data berhasil di-update!', 200);
+        $user = User::findOrFail($id);
+        $user->update([
+            'name' => $request->name,
+            'email' => $request->email,
+        ]);
+        return response()->json('Data berhasil di-update!', 200);
     }
 
     /**

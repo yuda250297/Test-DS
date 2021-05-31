@@ -1,6 +1,8 @@
 <template>
     <div>
-        <h3 class="text-left">Data User</h3><br/>
+        <div class="card-header bg-dark">
+            <h3 class="text-left text-white">Data User</h3><br/>
+        </div>
 
         <table class="table table-bordered">
             <thead class="bg-dark text-white">
